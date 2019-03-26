@@ -1,0 +1,157 @@
+<?php include 'include/header.php' ?>
+<body>
+	<!--Main Start Code Here-->
+	<div class="wrapper">		
+		<div class="container-fluid	top-main-section">
+			<div class="container">
+				<div class="row top-menu">
+					<div class="col-md-4">
+							<ul  class="top-bar">
+								<li><a><i class="fa fa-phone"></i>+91 9773049923</a></li>
+								<li><a><i class="fa fa-envelope"></i>info@demo.com</a></li>							
+							</ul>
+					</div>
+					<div class="col-md-4 logo">
+						<a>
+							<h2>
+								India perfect Ride
+							</h2>
+						</a>
+					</div>
+					<div class="col-md-4 contact-list">
+						
+							<a data-fancybox data-type="iframe" data-src="login.html" href="javascript:;">
+								<i class="fa fa-user" aria-hidden="true"></i>Login
+							</a>
+
+
+							<a data-fancybox data-type="iframe" data-src="login.html" href="javascript:;">
+								<i class="fa fa-video-camera" aria-hidden="true"></i>Video
+							</a>
+
+					</div>
+				</div>
+			</div>					
+		</div>
+			<div class="main-div">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 main-baner">
+							<div>
+								<a href="#">
+									<img src="img/1.png" alt="">
+								</a>
+							</div>
+						<div>
+								<a href="#">
+									<img src="img/2.png" alt="">
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<img src="img/3.png" alt="">
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<img src="img/4.png" alt="">
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<img src="img/1.png" alt="">
+								</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="col-md-12 about-us">
+						<h2>About Us</h2>
+						<img src="img/line-div.png">
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						
+					</p>
+					</div>
+				</div>
+			</div>
+
+
+
+  <script>  
+  	$(document).ready(function(){
+	     $('.main-baner').slick({
+	     	draggable: true,
+		    arrows: true,
+		    fade: true,
+		    autoplay:true,
+		    speed: 600,
+		    infinite: true,
+		    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+		    touchThreshold: 100,
+		    dots: true,
+		    infinite: true,
+		    slidesToShow: 1,
+		    slidesToScroll: 1,
+	      responsive: [
+	        {
+	          breakpoint: 1024,
+	          settings: {
+	            slidesToShow: 3,
+	            slidesToScroll: 1,
+	            infinite: true,
+	            dots: true
+	          }
+	        },
+	        {
+	          breakpoint: 801,
+	          settings: {
+	            slidesToShow: 2,
+	            slidesToScroll: 1
+	          }
+	        },
+	        {
+	          breakpoint: 601,
+	          settings: {
+	            slidesToShow: 2,
+	            slidesToScroll: 1
+	          }
+	        },
+	        {
+	          breakpoint: 480,
+	          settings: {
+	            slidesToShow: 1,
+	            slidesToScroll: 1
+	          }
+	        }
+	       ]
+	    });
+	       	$('[data-fancybox]').fancybox({
+				toolbar  : false,
+				smallBtn : true,
+				iframe : {
+					 css : {
+					            width : '400px',
+					            height : '200px'
+					        },
+					preload : false
+				}
+			})
+    });
+</script>
+  
+</body>
+</html>
